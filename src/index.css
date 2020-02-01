@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Changa', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: large;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  font-family: 'Indie Flower', cursive;
+  font-size: medium;
+}
+.logo {
+  text-align: center;
+  background-color: black;
+  color: antiquewhite;
+}
