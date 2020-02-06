@@ -4,26 +4,30 @@ import React, { Component } from "react";
 class Header extends Component {
 
     state = {
-        keywords: "",
-      
+        // keywords: "",
+        active: "active"
+
     }
 
-    inputChange(e) {
-        this.setState({
-            keywords: e.target.value
-        })
-    }
+    // inputChange(event) {
+    //     const value = event.target.value === "" ? "active" : "non-active";
+    //     this.setState({
+    //         keywords: event.target.value,
+    //         active: value
+    //     })
+    // }
 
 
     render() {
+        
         return (
-            <header>
+            <header className={this.state.active} >
                 <div className="logo"
                 >Logo</div>
-                <input onChange={(event) => this.inputChange(event)} />
+                <input onChange={this.props.keywords} />
                 <div>{this.state.title}</div>
                 <div>{this.state.keywords}</div>
-               
+
 
             </header>
         )
